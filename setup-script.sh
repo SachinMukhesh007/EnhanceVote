@@ -65,6 +65,7 @@ az vmss create \
 --backend-pool-name $bePoolName \
 --storage-sku $storageType \
 --load-balancer $lbName \
+--custom-data cloud-init.txt \
 --upgrade-policy-mode Automatic \
 --admin-username $adminName \
 --generate-ssh-keys \
