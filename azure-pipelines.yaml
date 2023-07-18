@@ -21,7 +21,7 @@ stages:
   jobs:
   - deployment: VMDeploy
     pool:
-      vmImage: 'Ubuntu-16.04'
+      vmImage: 'Ubuntu-latest'
     displayName: Deploy to VMSS
     environment:
       name: ACDND-C4-Project
