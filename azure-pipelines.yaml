@@ -5,7 +5,7 @@ stages:
   jobs:
   - job: Build
     pool:
-      name: Hosted Ubuntu
+      name: Hosted Ubuntu 2004
     steps:
     - task: ArchiveFiles@2
       displayName: 'Archive Azure Vote'
@@ -21,7 +21,7 @@ stages:
   jobs:
   - deployment: VMDeploy
     pool:
-      vmImage: 'Ubuntu-latest'
+      vmImage: 'Ubuntu-20.04'
     displayName: Deploy to VMSS
     environment:
       name: ACDND-C4-Project
